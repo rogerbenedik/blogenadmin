@@ -60,7 +60,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h1>Post One</h1>
+                    <h1> <i class="fas fa-cog"></i> Setting</h1>
                 </div>
             </div>
         </div>
@@ -75,60 +75,51 @@
                     </a>
                 </div>
                 <div class="index.html">
-                    <a href="#" class="btn btn-success btn-block">
+                    <a href="index.html" class="btn btn-success btn-block">
                         <i class="fas fa-check"></i>Save Changes
-                    </a>
-                </div>
-                <div class="index.html">
-                    <a href="#" class="btn btn-danger btn-block">
-                        <i class="fas fa-trash"></i>Delete Post
                     </a>
                 </div>
             </div>
         </div>
     </section>
-    <!--details-->
-    <section id="details">
+    <!--Settings-->
+    <section id="settings">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <div class="card">
                         <div class="card-header">
-                            <h4>Edit Post</h4>
+                            <h4>Edit Settings</h4>
                         </div>
                         <div class="card-body">
                             <form>
-                                <div class="form-group">
-                                    <label for="title">Title</label>
-                                    <input type="text" class="form-control" value="Post One">
-                                </div>
-                                <div class="form-group">
-                                    <label for="category">Category</label>
-                                    <select class="form-control">
-                                        <option value="">Web Development</option>
-                                        <option value="">Tech Gadgets</option>
-                                        <option value="">Business</option>
-                                        <option value="">Sport</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="image">Upload Image</label>
-                                    <div class="custom-file">
-                                        <input type="file" class="custom-file-input" id="image">
-                                        <label for="image" class="custom-file-label">Choose File</label>
+                                <fieldset class="form-group">
+                                    <legend>Allow User Registration</legend>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" value="YES" checked>YES
+                                        </label>
                                     </div>
-                                    <small class="form-text text-muted">Max Size 3mb</small>
-                                </div>
-                                <div class="form-group">
-                                    <label for="body"> Body</label>
-                                    <textarea name="editor1" class="form-control">Lorem, ipsum dolor sit amet consectetur 
-                                        adipisicing elit. Sint beatae quos obcaecati sapiente molestiae 
-                                        voluptates repellendus dicta expedita quasi eveniet earum at accusamus 
-                                        eius ipsa quibusdam tempora nulla maxime quae consequuntur, minus alias? 
-                                        Culpa blanditiis libero, neque autem ducimus assumenda beatae sequi! 
-                                        Adipisci minima nulla voluptates, eveniet consequuntur 
-                                        assumenda iure.</textarea>
-                                </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" value="No"> No
+                                        </label>
+                                    </div>
+                                </fieldset>
+
+                                <fieldset class="form-group">
+                                    <legend>Home Format</legend>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" value="YES" checked> Blog Page
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="radio" class="form-check-input" value="page"> Home Page
+                                        </label>
+                                    </div>
+                                </fieldset>
                             </form>
                         </div>
                     </div>
